@@ -86,6 +86,10 @@ namespace Carbon3D {
     inline Vector3D operator -(const Vector3D& a, const Vector3D& b) {
         return {a.x - b.x, a.y - b.y, a.z - b.z };
     }
+
+    inline float Dot(const Vector3D& a, const Vector3D& b) {
+        return a.x * b.x + a.y * b.y + a.z * b.z;
+    }
 }
 
 #endif //CARBON3D_VECTOR3D_H
